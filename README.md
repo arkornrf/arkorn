@@ -1,2 +1,2 @@
-# arkorn.github.io
+# arkorn
 my free landing
