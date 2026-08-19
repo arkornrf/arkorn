@@ -1,3 +1,6 @@
+/* 1. Импорт шрифтов из Google Fonts */
+@import url('https://googleapis.com');
+
 /* Переменные */
 :root {
   --bg-color: #f4f4f9;
@@ -6,6 +9,10 @@
   --card-bg: #ffffff;
   --border-color: #dddddd;
   --radius: 8px;
+
+  /* 2. Переменные для шрифтов */
+  --font-main: 'Inter', sans-serif;
+  --font-title: 'Montserrat', sans-serif;
 }
 
 /* Сброс стилей */
@@ -15,13 +22,21 @@
   padding: 0;
 }
 
-/* Базовые настройки */
+/* 3. Применение основного шрифта для всего сайта */
 body {
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family: var(--font-main);
   background-color: var(--bg-color);
   color: var(--text-color);
   line-height: 1.6;
   padding: 20px;
+}
+
+/* 4. Применение акцентного шрифта для заголовков */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-title);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 15px;
 }
 
 /* Контейнер */
