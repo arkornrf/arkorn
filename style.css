@@ -1,0 +1,72 @@
+/* Переменные */
+:root {
+  --bg-color: #f4f4f9;
+  --text-color: #333333;
+  --primary-color: #0066cc;
+  --card-bg: #ffffff;
+  --border-color: #dddddd;
+  --radius: 8px;
+}
+
+/* Сброс стилей */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Базовые настройки */
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Контейнер */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Карточка */
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Кнопка */
+.btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Стили для футера */
+footer {
+  display: flex;
+  flex-direction: column; /* Элементы будут друг под другом */
+  justify-content: center; /* Центрирование по вертикали */
+  align-items: center; /* Центрирование по горизонтали */
+  text-align: center; /* Центрирование текста внутри элементов */
+  gap: 12px; /* Расстояние между элементами внутри футера */
+  padding: 40px 20px;
+  width: 100%;
+}
+
